@@ -179,6 +179,7 @@ layer_0/tile_data = PackedInt32Array(65536, 0, 0, 65537, 0, 0, 65538, 0, 0, 3, 0
 [node name="Player" parent="." instance=ExtResource("1_tpd0k")]
 position = Vector2(17, -4)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(24, -14)
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, -9)
 zoom = Vector2(4, 4)
+position_smoothing_enabled = true
