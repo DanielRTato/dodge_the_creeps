@@ -36,7 +36,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"idle",
-"speed": 10.0
+"speed": 8.0
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3rm40"]
@@ -44,6 +44,7 @@ radius = 4.0
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
+collision_layer = 3
 script = ExtResource("1_ev6ob")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
@@ -51,8 +52,7 @@ position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_xwt2k")
 animation = &"idle"
 autoplay = "idle"
-frame = 2
-frame_progress = 0.401461
+frame_progress = 0.202575
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, -5)
